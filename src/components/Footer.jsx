@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
-import { HeartHandshake, MapPin, Mail, Phone } from 'lucide-react';
+import { MapPin, Mail, Phone } from 'lucide-react';
+import logo from '../assets/LogoFolang.png';
 
 export default function Footer() {
   return (
@@ -8,11 +9,9 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           
           <div className="space-y-4">
-            <Link to="/" className="flex items-center gap-2 inline-flex">
-              <HeartHandshake className="w-8 h-8 text-primary-green" />
-              <div className="flex flex-col">
-                <span className="font-bold text-xl leading-none text-white">Folang Africa</span>
-                <span className="text-xs font-semibold tracking-wider text-primary-blue uppercase">NPC</span>
+            <Link to="/" className="inline-block">
+              <div className="bg-white/95 p-3 rounded-2xl shadow-lg inline-block hover:bg-white transition-colors duration-300">
+                <img src={logo} alt="Folang Africa NPC Logo" className="h-14 w-auto object-contain" />
               </div>
             </Link>
             <p className="text-sm text-gray-400 mt-4 max-w-xs">

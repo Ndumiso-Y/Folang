@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { NavLink, Link } from 'react-router-dom';
-import { Menu, X, HeartHandshake } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
+import logo from '../assets/LogoFolang.png';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -20,14 +21,8 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           <div className="flex-shrink-0 flex items-center">
-            <Link to="/" className="flex items-center gap-2 group" onClick={closeMenu}>
-              <div className="p-2 bg-primary-blue/10 rounded-xl group-hover:bg-primary-blue/20 transition-colors">
-                <HeartHandshake className="w-8 h-8 text-primary-blue" />
-              </div>
-              <div className="flex flex-col">
-                <span className="font-bold text-xl leading-none text-neutral-dark">Folang Africa</span>
-                <span className="text-xs font-semibold tracking-wider text-primary-green uppercase">NPC</span>
-              </div>
+            <Link to="/" className="flex items-center group" onClick={closeMenu}>
+              <img src={logo} alt="Folang Africa NPC Logo" className="h-16 w-auto object-contain transition-transform duration-300 group-hover:scale-105" />
             </Link>
           </div>
 
