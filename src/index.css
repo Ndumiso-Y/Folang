@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary-blue: #2E9FE6;
+  --color-primary-green: #6FAE2D;
+  --color-primary-yellow: #f59e0b;
+  --color-neutral-white: #FFFFFF;
+  --color-neutral-light: #F5F7FA;
+  --color-neutral-dark: #1E293B;
+  
+  --font-sans: "Inter", "sans-serif";
+}
+
+@layer base {
+  body {
+    @apply text-neutral-dark bg-white m-0 p-0 overflow-x-hidden font-sans;
+  }
+}
